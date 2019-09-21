@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1 id='event_title'>Upcoming Events</h1>
+{% for event in events %}
+<div class="container eventlist">
+  <a href="{% url 'events:event_detail_view' pk=event.pk %}"><h3>{{event.title}}</h3></a>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="{{ event.picture.url }}" height='100' width = '150' alt="Error">
+    </div>
+    <div class="col-sm">
+      <p>{{event.description|truncatechars:60}}</p>
+      <p>{{event.date}}</p>
+      <p>{{event.time}}</p>
+    </div>
+  </div>
+</div>
+
+
+{% endfor %}
+
+{% endblock %}

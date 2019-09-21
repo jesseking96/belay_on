@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>{{event.title}}</h1>
+<img src="{{ event.picture.url }}" height='200' alt="Error">
+<p>Date: {{event.date}}</p>
+<p>Time: {{event.time}}</p>
+<p>Description: {{event.description}}</p>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+nav {
+  background-color: #636363;
+}
+nav a {
+  color: #dbd7d7;
+}
+nav button {
+  color: white;
+}
+
+.footer-top {
+  text-align: center;
+  background-color: #636363;
+  color: #dbd7d7;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+.footer-bottom {
+  background-color: #91908d;
+}
+.footer-bottom p {
+  margin: 9px;
+}
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+#event_title {
+
+}
+
+.eventlist {
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+
+
+body {
+  background-color: #91908d;
+}
